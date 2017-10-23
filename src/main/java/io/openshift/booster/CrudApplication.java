@@ -114,7 +114,7 @@ public class CrudApplication extends AbstractVerticle {
     try {
       item = ctx.getBodyAsJson();
     } catch (RuntimeException e) {
-      error(ctx, 415, "invalid payload");
+      error(ctx, 415, "invalid payload2");
       return;
     }
 
