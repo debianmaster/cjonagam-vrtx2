@@ -145,7 +145,7 @@ public class CrudApplication extends AbstractVerticle {
     }
 
     if (item == null) {
-      error(ctx, 415, "invalid payload");
+      error(ctx, 415, "invalid payload id");
       return;
     }
 
