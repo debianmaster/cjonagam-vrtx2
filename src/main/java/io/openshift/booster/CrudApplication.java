@@ -42,7 +42,6 @@ public class CrudApplication extends AbstractVerticle {
     // web interface
     router.get().handler(StaticHandler.create());
 
-
     // Create a JDBC client
     JDBCClient jdbc = JDBCClient.createShared(vertx, new JsonObject()
       .put("url", "jdbc:postgresql://" + getEnv("MY_DATABASE_SERVICE_HOST", "localhost") + ":5432/my_data")
